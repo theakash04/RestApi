@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Card({main, secondary}) {
+function Card({main, secondary, onClick}) {
     return (
-        <div className='bg-[#FFFCFC] rounded-2xl p-4 flex flex-col hover:bg-white/60 transition-colors ease-in-out shadow-md cursor-pointer'>
+        <div className='bg-[#FFFCFC] rounded-2xl p-4 flex flex-col hover:bg-white/60 transition-colors ease-in-out shadow-md cursor-pointer' onClick={onClick}>
             <p className='font-bold text-black'>
                 {main}
             </p>

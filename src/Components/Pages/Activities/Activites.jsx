@@ -1,10 +1,11 @@
 import React from 'react'
+import Cotainer from '../../Container/Cotainer'
 
 function Activites() {
     return (
-        <div>
+        <Cotainer>
             Activites
-        </div>
+        </Cotainer>
     )
 }
 

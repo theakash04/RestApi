@@ -5,4 +5,9 @@
   text-align: center;
 } */
 
+#root{
+  background-color: #E6E6E6;
+  min-height: 100vh;
+}
+
 
