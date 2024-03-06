@@ -49,7 +49,9 @@ function MainDataDisplay() {
     function scrollToBottom(){
         window.scrollTo({
             top: document.body.scrollHeight,
-            behavior: 'smooth'
+            behavior: 'smooth',
+            block: 'end', 
+            inline: 'nearest'
         });
     }
 
@@ -66,7 +68,7 @@ function MainDataDisplay() {
                                     <UserData userData={item.user}/>
                                 </div>
                                 <div>
-                                    <FridayData Aidata={item.friday}/>
+                                    {item.friday == "" ? <TextFetching />:<FridayData Aidata={item.friday}/>}
                                 </div>
                             </div>
                         ))} 

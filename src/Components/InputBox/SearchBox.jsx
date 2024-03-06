@@ -17,20 +17,22 @@
         //handle submit function
         const handleSubmit= async(e)=>{
             e.preventDefault();
+            
+            // sending request and fetching data
+            // response = await axios.post("http://192.168.67.234:3000/chatbot",{
+            //     input: userInput,
+            // });
+            const testAi = "The server is Disconnected now so the data cannot be fetched!"
+            setResponse(testAi);
             onUserData(userInput);
-
-                // sending request and fetching data
-                // response = await axios.post("http://192.168.67.234:3000/chatbot",{
-                //     input: userInput,
-                // });
-                const testAi = "Hello this is friday"
-                setResponse(testAi);
-                setUserInput('');
+            setUserInput('');
         }
 
         // Pass response to onFetchUpdate when it changes
         useEffect(() => {
             onFetchUpdate(response);
+
+
         }, [response, onFetchUpdate]);
 
         //input handle change Function

@@ -4,7 +4,7 @@ import Avatar from '@mui/material/Avatar';
 
 function FridayData({Aidata}) {
     return (
-        <>
+        <>  
             <div className="flex items-center gap-2 overflow-x-hidden w-full">
                 <Avatar
                     sx={{
