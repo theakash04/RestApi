@@ -1,9 +1,25 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import Avatar from '@mui/material/Avatar';
-import TypeIt from 'typeit-react';
+import Typed from 'typed.js';
 
 
 function FridayData({Aidata}) {
+
+
+    const TypedRef = useRef(null);
+
+    useEffect(()=>{
+        const typed = new Typed(TypedRef.current, {
+            strings: [Aidata],
+            typeSpeed: 20,
+            showCursor: false,
+        });
+
+        return () =>{
+            typed.destroy();
+        };
+    },[])
+
     return (
         <>  
             <div className="flex items-center gap-2 overflow-x-hidden w-full">
@@ -21,7 +37,7 @@ function FridayData({Aidata}) {
                 <p className="font-bold font-mono">Friday</p>
             </div>
             <div className="py-1 pl-10 w-full mb-5">
-                <TypeIt className="text-wrap text-start font-mono">{Aidata}</TypeIt>
+                <p ref={TypedRef} className="text-wrap text-start font-mono" />
             </div>
         </>
     )
