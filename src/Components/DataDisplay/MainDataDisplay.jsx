@@ -68,7 +68,7 @@ function MainDataDisplay() {
                                     <UserData userData={item.user}/>
                                 </div>
                                 <div>
-                                    {item.friday == "" ? <TextFetching />:<FridayData Aidata={item.friday}/>}
+                                    {<FridayData Aidata={item.friday}/>}
                                 </div>
                             </div>
                         ))} 
@@ -76,7 +76,7 @@ function MainDataDisplay() {
             ) : (
                 <PlaceHolder />
             )}
-            <div className="fixed bottom-5 left-0 right-0 mx-auto">
+            <div className="fixed bottom-5 left-0 right-0 mx-auto ">
                 <SearchBox onFetchUpdate={handleDataUpdate} onUserData={handleUserData} clearChat={handleClearChat}/>
             </div>
         </>

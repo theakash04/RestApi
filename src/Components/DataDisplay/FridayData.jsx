@@ -1,5 +1,6 @@
 import React from 'react'
 import Avatar from '@mui/material/Avatar';
+import TypeIt from 'typeit-react';
 
 
 function FridayData({Aidata}) {
@@ -20,7 +21,7 @@ function FridayData({Aidata}) {
                 <p className="font-bold font-mono">Friday</p>
             </div>
             <div className="py-1 pl-10 w-full mb-5">
-                <p className="text-wrap text-start font-mono">{Aidata}</p>
+                <TypeIt className="text-wrap text-start font-mono">{Aidata}</TypeIt>
             </div>
         </>
     )
