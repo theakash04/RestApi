@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Avatar } from "@mui/material";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import ArticleIcon from '@mui/icons-material/Article';
-import CelebrationIcon from '@mui/icons-material/Celebration';
+import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
@@ -24,7 +24,7 @@ function NavBar() {
             <div className="absolute p-2 sm:hidden cursor-pointer z-40" onClick={() => setHidden(false) }>
                 <MenuIcon sx={{fontSize: "38px", fontWeight: "600"}}/>
             </div> 
-            <header className={`bg-[#C2C2C2] py-1 sm:grid px-1 place-items-center place-content-center w-[90px] overflow-hidden rounded-tr-2xl rounded-br-2xl fixed bottom-0 top-0 z-10 delay-300 transition-all ease-in-out sm:left-0 ${isHidden ? 'left-[-90px]' : 'left-0'} z-40`}>
+            <header className={`bg-[#C2C2C2] py-1 sm:grid px-1 place-items-center place-content-center w-[110px] overflow-hidden rounded-tr-2xl rounded-br-2xl fixed bottom-0 top-0 z-10 delay-300 transition-all ease-in-out sm:left-0 ${isHidden ? 'left-[-110px]' : 'left-0'} z-40`}>
                 <button 
                 onClick={()=> setHidden(true)}
                 className="absolute top-8 sm:hidden right-0 left-0 transition-all ease-in-out duration-100">
@@ -38,20 +38,20 @@ function NavBar() {
                 <div id="center" className="grid gap-6 place-content-center place-items-center sm:p-0 py-48">
                     <NavLink
                     to={"/"}
-                    className={({ isActive }) => `${isActive ? "bg-white/90" : "bg-transparent"} p-3 rounded-2xl hover:bg-white/70 transition-colors ease-in-out`}>
-                        <QuestionAnswerIcon sx={{ color: "black", fontSize: "28px" }} />
+                    className={({ isActive }) => `${isActive ? "bg-white/90" : "bg-transparent"} p-4 rounded-2xl hover:bg-white/70 transition-colors ease-in-out`}>
+                        <QuestionAnswerIcon sx={{ color: "black", fontSize: "32px" }} />
                     </NavLink>
 
                     <NavLink
                     to={"/activites"}
-                    className={({ isActive }) => `${isActive ? "bg-white/90" : "bg-transparent"} p-3 rounded-2xl hover:bg-white/70 transition-colors ease-in-out`}>
-                        <CelebrationIcon sx={{ color: "black", fontSize: "28px" }} />
+                    className={({ isActive }) => `${isActive ? "bg-white/90" : "bg-transparent"} p-4 rounded-2xl hover:bg-white/70 transition-colors ease-in-out`}>
+                        <SelfImprovementIcon sx={{ color: "black", fontSize: "32px" }} />
                     </NavLink>
 
                     <NavLink
                     to={"/Resources"}
-                    className={({ isActive }) => `${isActive ? "bg-white/90" : "bg-transparent"} p-3 rounded-2xl hover:bg-white/70 transition-colors ease-in-out`}>
-                        <ArticleIcon sx={{ color: "black", fontSize: "28px" }} />
+                    className={({ isActive }) => `${isActive ? "bg-white/90" : "bg-transparent"} p-4 rounded-2xl hover:bg-white/70 transition-colors ease-in-out`}>
+                        <ArticleIcon sx={{ color: "black", fontSize: "32px" }} />
                     </NavLink>
                 </div>
 

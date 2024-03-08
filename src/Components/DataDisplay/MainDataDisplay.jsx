@@ -18,7 +18,9 @@ function MainDataDisplay() {
 
     useEffect(()=>{
         PushDataArray();
-        scrollToBottom();
+        if(Aidata != ""){
+            scrollToBottom();
+        }
     },[Aidata, userData])
 
     
