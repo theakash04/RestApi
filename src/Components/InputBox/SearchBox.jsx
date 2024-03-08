@@ -32,8 +32,6 @@
         // Pass response to onFetchUpdate when it changes
         useEffect(() => {
             onFetchUpdate(response);
-
-
         }, [response, onFetchUpdate]);
 
         //input handle change Function

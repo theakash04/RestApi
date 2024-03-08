@@ -4,6 +4,7 @@ import './Pholder.css'
 
 
 
+
 function PlaceHolder() {
     
     const data = [
@@ -28,7 +29,11 @@ function PlaceHolder() {
     return (
         <>
             <div className='flex items-center w-full justify-center'>
-                <span className='text-4xl px-5 pt-10 font-extrabold'>How can I help you?</span>
+                <span className='text-4xl px-5 pt-10 font-extrabold'>Hii, I am Friday!</span>
+            </div>
+            <div>
+                {/* fix and import video */}
+                <video src="../../assets/sphere.mp4"></video>
             </div>
             <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 absolute bottom-28 left-0 right-0 sm:mx-44 mx-2 z-0'>
             {data.map((item, index) => (
