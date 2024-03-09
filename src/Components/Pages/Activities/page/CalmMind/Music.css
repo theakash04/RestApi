@@ -1,0 +1,27 @@
+#music:hover #MusicState{
+    display: block;
+}
+
+#MusicState{
+    position: absolute;
+    display: none;
+    transition: all 0.15s ease-in-out;
+}
+
+
+#icon1, #icon2, #icon3{
+    position: absolute;
+    display: none;
+    transition: all 0.15s ease-in-out;
+}
+
+
+#play:hover #icon1{
+    display: block;
+}
+#pause:hover #icon2{
+    display: block;
+}
+#restart:hover #icon3{
+    display: block;
+}

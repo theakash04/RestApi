@@ -33,7 +33,7 @@ function TextAnimate() {
 
 
     return (
-        <div className='font-bold text-2xl bg-white/40 backdrop-filter backdrop-blur-lg ml-10 py-2 w-48 text-center rounded-lg shadow-md sm:mr-0 mr-10'>
+        <div className='font-bold text-2xl bg-white/40 backdrop-filter backdrop-blur-lg ml-10 py-2 w-48 text-center rounded-lg shadow-md sm:mr-0 mr-10' id='animateText'>
             {text}
         </div>
     )

@@ -8,7 +8,7 @@ import '../../PlaceHolder/Pholder.css'
 function Activites() {
 
     return (
-        <Cotainer className={"sm:*:pl-40 px-4 pt-24"}>
+        <Cotainer className={"sm:*:pl-40 px-4 pt-24 sm:mr-32"}>
             <div className='grid sm:grid-cols-2 gap-4'>
                 <Link to={'/activites/calm-mind'}>
                     <ActivityCard
