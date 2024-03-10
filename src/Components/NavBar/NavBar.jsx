@@ -21,14 +21,14 @@ function NavBar() {
 
     return (
         <>
-            <div className="absolute p-2 sm:hidden cursor-pointer z-40" onClick={() => setHidden(false) }>
-                <MenuIcon sx={{color: "white", fontSize: "38px", fontWeight: "600"}}/>
+            <div className={`absolute p-2 sm:hidden cursor-pointer z-40 ${isHidden ? "absolute" : "hidden"}`} onClick={() => setHidden(false) }>
+                <MenuIcon sx={{ fontSize: "38px", fontWeight: "600"}} className="dark:text-white"/>
             </div> 
-            <header className={`dark:bg-black/40 bg-[#C2C2C2] py-1 sm:grid px-1 place-items-center place-content-center w-[110px] overflow-hidden rounded-tr-2xl rounded-br-2xl fixed bottom-0 top-0 z-10 delay-300 transition-all ease-in-out sm:left-0 ${isHidden ? 'left-[-110px]' : 'left-0'} z-40 border border-l-white/10 border-white/20`}>
+            <header className={`dark:bg-black/40 bg-[#C2C2C2] py-1 sm:grid px-1 place-items-center place-content-center w-[110px] overflow-hidden rounded-tr-2xl rounded-br-2xl fixed bottom-0 top-0 z-10 delay-300 transition-all ease-in-out sm:left-0 ${isHidden ? 'left-[-110px]' : 'left-0'} z-40 border border-l-white/10 border-white/20 backdrop-filter backdrop-blur-md`}>
                 <button 
                 onClick={()=> setHidden(true)}
                 className="absolute top-8 sm:hidden right-0 left-0 transition-all ease-in-out duration-100">
-                    <CloseIcon sx={{color: "white", fontSize: "32px"}} className="dark:bg-black/30 bg-white/70 rounded-full p-1"/>
+                    <CloseIcon sx={{ fontSize: "32px"}} className="dark:bg-black/30 bg-white/70 rounded-full p-1 dark:text-white"/>
                 </button>
 
                 <div className="absolute top-44 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all ease-in-out">

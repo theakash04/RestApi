@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from 'react'
 import Avatar from '@mui/material/Avatar';
 import Typed from 'typed.js';
+import { frame1 } from '../../assets/blenderPng/Animate';
 
 
 function FridayData({Aidata}) {
@@ -22,17 +23,19 @@ function FridayData({Aidata}) {
 
     return (
         <>  
+        {/* add avtar png from blenderPng of frame3 */}
             <div className="flex items-center gap-2 overflow-x-hidden w-full">
                 <Avatar
+                    alt='Friday'
+                    src={frame1}
                     sx={{
-                        bgcolor: "green",
-                        width: "30px",
-                        height: "30px",
+                        // bgcolor: "green",
+                        width: "40px",
+                        height: "40px",
                         fontSize: "17px",
                         textAlign: "center",
                     }}
                 >
-                    F
                 </Avatar>
                 <p className="font-bold font-mono">Friday</p>
             </div>

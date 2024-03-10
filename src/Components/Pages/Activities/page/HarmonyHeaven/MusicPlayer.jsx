@@ -77,7 +77,7 @@ function MusicPlayer() {
     }
 
     function handleEnded(){
-        console.log("Song ended. Skipping to next song...");
+        // console.log("Song ended. Skipping to next song...");
         skipNext();
     };
 
