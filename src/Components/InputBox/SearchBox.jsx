@@ -19,12 +19,12 @@
             e.preventDefault();
             
             // sending request and fetching data
-            // response = await axios.post("http://192.168.29.71:3000/chatbot",{
-            //     input: userInput,
-            // });
-            const testAi = "The server is Disconnected now so the data cannot be fetched!"
-            setResponse(testAi);
-            // setResponse(response.data);
+            response = await axios.post("http://192.168.172.11:3000/chatbot",{
+                input: userInput,
+            });
+            // const testAi = "The server is Disconnected now so the data cannot be fetched!"
+            // setResponse(testAi);
+            setResponse(response.data);
             onUserData(userInput);
             setUserInput('');
         }

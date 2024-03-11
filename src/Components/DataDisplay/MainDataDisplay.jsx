@@ -21,7 +21,7 @@ function MainDataDisplay() {
         if(Aidata != ""){
             scrollToBottom();
         }
-    },[Aidata, userData])
+    },[Aidata])
 
     
     function handleUserData(newUserData){
