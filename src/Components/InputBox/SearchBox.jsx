@@ -27,6 +27,7 @@
             setResponse(response.data);
             onUserData(userInput);
             setUserInput('');
+            
         }
 
         // Pass response to onFetchUpdate when it changes
