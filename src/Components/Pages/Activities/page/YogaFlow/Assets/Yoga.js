@@ -1,4 +1,4 @@
-import Yoga from './Yoga.jpg'
+import Yoga from './Yoga.jpg'   
 export{
     Yoga,
 }
