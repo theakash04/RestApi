@@ -6,8 +6,9 @@ import Framer from './Framer';
 
 
 
-function PlaceHolder() {
+function PlaceHolder({setDefCard}) {
     
+
     const data = [
         {
             main: "I am feeling lonely",
@@ -28,6 +29,9 @@ function PlaceHolder() {
     ];
 
 
+    function SendDefault(item){
+        setDefCard(item)
+    }
 
     return (
         <>
@@ -41,7 +45,7 @@ function PlaceHolder() {
             </div>
             <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 absolute bottom-24 left-0 right-0 sm:ml-44 sm:mr-10 mx-2 z-0'>
             {data.map((item, index) => (
-                <div key={index} className='card-animation'>
+                <div key={index} className='card-animation'  onClick={() => SendDefault(item.main)}>
                     <Card main={item.main} secondary={item.secondary}/>
                 </div>
             ))}

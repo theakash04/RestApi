@@ -12,7 +12,7 @@ function MainDataDisplay() {
     const [Aidata, setAiData] = useState("");
     const [userData, setUserData] = useState("");
     const [dataArray, setDataArray] = useState([])
-    const [isLoading, setLoading] = useState(false);
+    const [defData, setDefData] = useState('');
 
 
 
@@ -57,6 +57,10 @@ function MainDataDisplay() {
         });
     }
 
+    function handleDefaultData(defData){
+        setDefData(defData);
+    }
+
     return (
         <>
             {dataArray.length > 0 ? (
@@ -76,10 +80,10 @@ function MainDataDisplay() {
                         ))} 
                 </div>
             ) : (
-                <PlaceHolder />
+                <PlaceHolder setDefCard={handleDefaultData}/>
             )}
-            <div className="fixed bottom-5 left-0 right-0 mx-auto ">
-                <SearchBox onFetchUpdate={handleDataUpdate} onUserData={handleUserData} clearChat={handleClearChat}/>
+            <div className="fixed bottom-0 w-full left-1/2 mx-auto transform -translate-x-1/2 -translate-y-1/2">
+                <SearchBox defaultData={defData} onFetchUpdate={handleDataUpdate} onUserData={handleUserData} clearChat={handleClearChat}/>
             </div>
         </>
     );
