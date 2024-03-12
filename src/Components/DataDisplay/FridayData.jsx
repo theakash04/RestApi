@@ -9,6 +9,8 @@ function FridayData({Aidata}) {
 
     const TypedRef = useRef(null);
 
+    // const lines = Aidata.split("\n");
+
     useEffect(()=>{
         const typed = new Typed(TypedRef.current, {
             strings: [Aidata],

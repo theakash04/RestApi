@@ -3,7 +3,7 @@ import React from 'react'
 
 function TextFetching() {
     return (
-        <div className="bg-black w-3 h-3 rounded-full animate-bounce"></div>
+        <div className="dark:bg-white bg-black w-3 h-3 rounded-full animate-bounce"></div>
     )
 }
 
