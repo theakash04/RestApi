@@ -278,7 +278,7 @@ function Framer() {
     }, [frameIndex, frames]);
 
     return (
-        <div className='w-[500px] flex items-center justify-center'>
+        <div className='w-[500px] sm:flex items-center justify-center hidden'>
             <img src={frame} alt="" className='sm:w-full w-72'/>
         </div>
     )
