@@ -22,7 +22,7 @@
 
         async function fetching(data){
             // sending request and fetching data
-            response = await axios.post("localhost:3000/chatbot",{
+            response = await axios.post("http://localhost:3000/chatbot",{
                 input: userInput,
             });
             setResponse(response.data);
