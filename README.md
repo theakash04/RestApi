@@ -1,6 +1,6 @@
 # Frontend Web Application
 
-This repository contains the frontend code for "Mindful Mate," a web application developed as part of a group project during a college code fest. The backend for this application is developed by [Anubhav Samanta](https://github.com/anubhavgh023)
+This repository contains the frontend code for "Mindful Mate," a web application developed as part of a group project during a college code fest. The backend for this application was developed by [Anubhav Samanta](https://github.com/anubhavgh023)
 
 ## About
 This frontend application is built using React.js and utilizes various libraries and components for routing, UI management, and styling. It fetches and sends data to an API, which is connected to the backend. Please note that to fully utilize this application, you will need access to the backend code and have it running in your system.
